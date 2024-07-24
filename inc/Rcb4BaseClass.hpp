@@ -14,7 +14,6 @@
 #include <stdint.h>
 #include <unistd.h>
 
-
 typedef uint8_t byte;
 
 #define delay(milis) usleep(milis * 1000)
@@ -23,6 +22,8 @@ class Rcb4BaseClass {
 
 public:
   static constexpr int Version = 220;
+
+  enum AckType : byte { Ack = 0x06, Nack = 0x15 };
 
   enum CommandTypes : byte {
     Move = 0x00,
