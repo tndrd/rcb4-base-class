@@ -12,7 +12,7 @@
  *	@copyright &copy; Kondo Kagaku Co.,Ltd. 2019
  **/
 
-#include "Rcb4BaseClass.hpp"
+#include "rcb4-base-class/Rcb4BaseClass.hpp"
 
 #define MOCK(ret)                                                              \
   { return ret; }
