@@ -109,23 +109,23 @@ public:
   typedef union {
 
     struct {
-      byte EnableSio : 1;
-      byte EnableRunEeprom : 1;
-      byte EnableServoResponse : 1;
-      byte EnableReferenceTable : 1;
-      byte Frame : 2;
-      byte Baudrate : 2;
-      byte ZeroFlag : 1;
-      byte CarrayFlag : 1;
-      byte ProgramError : 1;
-      byte RFU : 1;
-      byte IcsBaudrate : 2;
-      byte GreenLED : 1;
+      uint8_t EnableSio : 1;
+      uint8_t EnableRunEeprom : 1;
+      uint8_t EnableServoResponse : 1;
+      uint8_t EnableReferenceTable : 1;
+      uint8_t Frame : 2;
+      uint8_t Baudrate : 2;
+      uint8_t ZeroFlag : 1;
+      uint8_t CarrayFlag : 1;
+      uint8_t ProgramError : 1;
+      uint8_t RFU : 1;
+      uint8_t IcsBaudrate : 2;
+      uint8_t GreenLED : 1;
     } bit;
 
     struct {
-      byte low;
-      byte high;
+      uint8_t low;
+      uint8_t high;
     } byte;
     unsigned short word;
   } ConfigData;
